@@ -62,7 +62,7 @@ class RegisterResourceMediumTest {
                 .when()
                 .post("/tech-test-api/v1/register")
                 .then().log().all()
-                .assertThat().statusCode(201).contentType(JSON);
+                .assertThat().statusCode(201);
     }
 
 }
