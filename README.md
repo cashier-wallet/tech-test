@@ -25,7 +25,7 @@ Develop a Registration Service that implements a /register endpoint taking a JSO
 
 ### Example request:
 ```
-    curl -X POST \ http://127.0.0.1:8080/tech-test-api/v1/register \
+    curl -v -X POST http://localhost:8080/tech-test-api/v1/register \
     -H 'Content-Type: application/json' \
     -d '{
     "username": "BobFrench", "password": "Password1", "dob": "1980-02-21",
