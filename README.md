@@ -1,6 +1,6 @@
 # Wallet Team Tech Test
 
-We would like you to develop a rest endpoint in Java. The goal of this exercise is to get an idea of the code you would produce if you were working at Bally’s, therefore your solution should be of production quality.
+We would like you to develop a rest endpoint in Java in TDD manner. The goal of this exercise is to get an idea of the code you would produce if you were working at Bally’s, therefore your solution should be of production quality.
 
 ## Requirements:
 1.	Must use Java (17+).
@@ -17,8 +17,8 @@ Develop a Registration Service that implements a /register endpoint taking a JSO
 
 ### Expected responses:
 *	If the request body fails to conform to any of the basic validation checks return HTTP Status code: 400
-*	If the username has already been used reject the request and return HTTP Status code: 409
-*	A successful registration should return HTTP Status code: 201
+*	If the username has already been used/created, reject the request and return HTTP Status code: 409
+*	A successful registration must return HTTP Status code: 201
 
 ### Example request:
 ```
