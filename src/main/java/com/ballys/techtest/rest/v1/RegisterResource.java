@@ -19,16 +19,19 @@ import javax.ws.rs.core.Response;
 @Slf4j
 public class RegisterResource {
     private final CustomerService customerService;
+    private final Validator validator;
 
     @Inject
-    public RegisterResource(CustomerService customerService) {
+    public RegisterResource(CustomerService customerService, Validator validator) {
         this.customerService = customerService;
+        this.validator = validator;
     }
 
     @POST
     @Path("/register")
     public Response register(CustomerRequest customerRequest) {
         log.info("New Customer User={}", customerRequest);
+        validator.validateCustomerRequest(customerRequest);
         customerService.register(new CustomerInfo());
         return Response.status(Response.Status.OK).build();
     }

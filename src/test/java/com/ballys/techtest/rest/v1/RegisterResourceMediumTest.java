@@ -55,7 +55,7 @@ class RegisterResourceMediumTest {
 
     @Test
     public void register_ValidCustomer_Return201SuccessResponse() {
-        CustomerRequest customerRequest = new CustomerRequest("BobFrench", "Password1", LocalDate.parse("1980-02-21"), "349293081054422");
+        CustomerRequest customerRequest = new CustomerRequest("BobFrench", "Password1", "1980-02-21", "349293081054422");
         given().log().all()
                 .contentType(JSON)
                 .body(customerRequest)
