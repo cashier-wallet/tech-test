@@ -11,7 +11,7 @@ Develop a Registration Service that implements a /register endpoint taking a JSO
 
 ### Expected responses:
 *	If the request body fails to conform to any of the basic validation checks return HTTP Status code: 400
-*	If the username has already been used/created, reject the request and return HTTP Status code: 409
+*	If the username has already been used/customer created, reject the request and return HTTP Status code: 409
 *	A successful registration must return HTTP Status code: 201
 
 ### Example request:
