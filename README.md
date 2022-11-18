@@ -5,7 +5,7 @@ We would like you to implement the following functionality to an existing rest e
 ## Problem:
 Registration Service has a REST /register endpoint taking a JSON body.
 
-### Required data & validation, Customer Request Validation must:
+### Required data & validation for the Customer Request must:
 *	Username - alphanumeric, no spaces
 *	Password – min length 4, at least one upper case letter & number
 
