@@ -1,11 +1,11 @@
 # Wallet Team Tech Test
 
-We would like you to develop a rest endpoint in Java in TDD manner. The goal of this exercise is to get an idea of the code you would produce if you were working at Bally’s, therefore your solution should be of production quality.
+We would like you to implement the following functionality to an existing rest endpoint in Java in TDD manner. The goal of this exercise is to get an idea of the code you would produce if you were working at Bally’s, therefore your solution should be of production quality.
 
 ## Problem:
-Develop a Registration Service that implements a /register endpoint taking a JSON body.
+Registration Service has a REST /register endpoint taking a JSON body.
 
-### Required data & validation:
+### Required data & validation, Customer Request Validation must:
 *	Username - alphanumeric, no spaces
 *	Password – min length 4, at least one upper case letter & number
 
